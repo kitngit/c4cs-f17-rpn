@@ -1,5 +1,7 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 import operator
+import readline
+import colorama
 ops = {
 	'+': operator.add,
 	'-': operator.sub,
@@ -20,12 +22,15 @@ def calculate(myarg):
 			function(arg1, arg2)
 			result = function(arg1, arg2)
 			stack.append(result)
-
+	print(colorama.Fore.YELLOW)
+	print(result)
+	print(colorama.Fore.WHITE)
+	
 	return stack.pop()
 
 def main():
 	while True:
-		calculate(input("rpn calc> "))
+		calculate(raw_input(colorama.Fore.GREEN + "rpn calc> "+colorama.Fore.WHITE))
 
 if __name__ == '__main__':
 	main()

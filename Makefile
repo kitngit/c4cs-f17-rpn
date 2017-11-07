@@ -3,4 +3,5 @@ test:
 	coverage run test_rpn.py
 	coverage report -m
 	coverage-badge > README.md
+	mv README.md.svg README.md
 .PHONY: test

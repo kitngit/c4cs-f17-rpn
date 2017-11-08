@@ -1,6 +1,4 @@
 language: python
-install: 
-  - pip install unittest
 python:
   - "3.4"
 script: make test

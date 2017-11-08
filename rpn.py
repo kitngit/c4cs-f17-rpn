@@ -1,7 +1,6 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import operator
 import readline
-import colorama
 ops = {
 	'+': operator.add,
 	'-': operator.sub,
@@ -22,9 +21,7 @@ def calculate(myarg):
 			function(arg1, arg2)
 			result = function(arg1, arg2)
 			stack.append(result)
-	print(colorama.Fore.YELLOW)
 	print(result)
-	print(colorama.Fore.WHITE)
 	
 	return stack.pop()
 
